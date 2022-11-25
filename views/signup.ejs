@@ -1,0 +1,20 @@
+<form method ="post" action = "/create-new-user">
+    <div class="form-group">
+      <h4>Signup</h4>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Name</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Full name" name="fullName" required />
+          </div>
+            <label for="exampleInputEmail1">Email address</label>
+            <input type ="email"  name="email"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"required />
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+       <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password" required />
+       </div>
+    
+    <button  class="btn btn-primary">Create a new user</button> 
+    </div>
+    <h5><%= err %></h5>
+    <h5><%= result %></h5>
+  </form>
